@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	<h1>Creating javascript objects</h1>
+	<p id="demo"></p>
+	<button id="click me">Click me</button>
+</body>
+<script>
+	var student={
+		name:"chris",
+		age:21,
+		studies:"Computer science"
+		};
+	//student.age=25;
+	x="age";
+	document.getElementById("demo").innerHTML=student.name+" of the age "+student[x]+" studies "+student.studies;
+</script>
+<script>
+	let user={
+		name:"chris",
+		age:24,
+	};
+	function sayHi(){
+		alert("hello");
+	}
+	document.getElementById("demo").innerHTML="Hi  "+user.name;
+	document.getElementById("click me").onclick=sayHi;
+</script>
+<script>
+	var car={
+		model:"bmw320",
+		color:"blue",
+		fuel_type:"diesel",
+		get fuel(){
+			return this.fuel_type;
+		}
+	};
+	document.getElementById("demo").innerHTML=car.fuel;
+</script>
+<script>
+	var car={
+		model:"audi",
+		color:"blue",
+		fuel_type:"",
+		set fuel(fuel){
+			this.fuel_type=fuel;
+		}
+	};
+	car.fuel="petrol";
+	document.getElementById("demo").innerHTML=car.fuel_type;
+</script>
+
+</html>

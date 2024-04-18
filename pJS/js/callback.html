@@ -1,0 +1,11 @@
+<script>
+function fun1(x,cbf){
+	console.log("I'm F1");
+	console.log(x);
+	cbf();
+}
+function fun2(){
+	console.log("I'm F2");
+}
+fun1('hello',fun2);
+</script>

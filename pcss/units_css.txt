@@ -1,0 +1,16 @@
+two types of units absolute and relative
+absolute unit is a unit of lenght that providesa precise fixed size for the element the are applied to . cm,mm,qm,inches(inches)
+pc,points and pixels(pt,px) among them px is used in web design and web development
+
+relative  is a unit length that is relative to the fontsize or viewport 
+em,rem,px,ch,vh
+
+px: 100px=3inch  2.94cm=1inch  
+Different boxes have different measurement  CSS units!=realworld measurements
+pixel is a anchor unit it is dependent on something called reference pixel(it is a pixel that looks exactly same in all
+viewing situations relative to the expected viewing distance of a distance)
+em:relative to the font-size of theparent
+rem:relative to the font-size of the html root(default-16px)
+
+% are relative to the parent to overcome this we use vw which is independent of parent
+ch:used in paragraphs to loook better(max_width:60ch)

@@ -1,0 +1,33 @@
+<!--Form validation involves validating all the information provided in a form on the server.However,form validation can be performed on the client side as well
+Javascript facilitates form validation on the client;s computer before sending it to the server.Form validation generally performs two functions.
+Basic validation:This ensures that all the mandatory fields are filled .It would require just a loop through each field in the form and check for data
+Data Format Validation:Data validation checks the data for its correctness.Your code must include appropriate logic to test correctness of data.-->
+<html>
+<head>
+	<title>Javascript this keyword</title>
+	<script type="text/javascript">
+		function Validation(){
+			if(document.myform.email.value==""){
+			alert("Please provide your email id");
+			document.myform.email.focus()
+			return false;
+			}
+			else if(document.myform.password.value==""){
+			alert("Please provide your password");
+			document.myform.password.focus()
+			return false;
+			}
+			else{
+				return true;
+			}
+		}
+	</script>
+</head> 
+<body>
+	<form action="message.html" name="myform" onsubmit="return(Validation())">
+		<input name="email" placeholder="Enter email" type="text"></br>
+		<input name="password" placeholder="Enter password" type="password"></br>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

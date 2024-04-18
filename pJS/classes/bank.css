@@ -1,0 +1,19 @@
+*{
+    margin:0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image:linear-gradient(left to right,red,green);
+}
+#amount{
+    display:flex;
+    justify-content: center;
+    margin:10px;
+
+}
+.buttons{
+    align-items: center;
+    width:200px;
+    position:relative;
+    
+}

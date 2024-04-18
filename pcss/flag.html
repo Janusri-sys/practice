@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN FLAG</title>
+    <style>
+        .flag{
+            display: grid;
+            place-items: center;
+            margin-top:8%;
+        }
+
+        .top,.middle,.bottom{
+            height:150px;
+            width:950px;
+
+        }
+        .top{
+            background-color: #ff9933;
+        }
+        .middle{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom{
+            background-color: green;
+        }
+        .wheel{
+            height:150px;
+            width:150px;
+            border-radius: 50%;
+            outline:2px solid darkblue;
+            position:relative
+        }
+        .line{
+            position:absolute;
+            height:100%;
+            width:1px;
+            background-color: darkblue;
+            
+            left:50%;
+        }
+        .line:nth-child(1){
+            transform: rotate(15deg);
+        }
+        .line:nth-child(2){
+            transform: rotate(30deg);
+        }
+        .line:nth-child(3){
+            transform: rotate(45deg);
+        }
+        .line:nth-child(4){
+            transform: rotate(60deg);
+        }
+        .line:nth-child(5){
+            transform: rotate(75deg);
+        }
+        .line:nth-child(6){
+            transform: rotate(90deg);
+        }
+        .line:nth-child(7){
+            transform: rotate(105deg);
+        }
+        .line:nth-child(8){
+            transform: rotate(120deg);
+        }
+        .line:nth-child(9){
+            transform: rotate(135deg);
+        }
+        .line:nth-child(10){
+            transform: rotate(150deg);
+        }
+        .line:nth-child(11){
+            transform: rotate(165deg);
+        }
+        .line:nth-child(12){
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="wheel">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
